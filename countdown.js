@@ -2,4 +2,4 @@ function countdown(seconds){
   // ...
 }
 
-countdown(10);
+countdown(5);
