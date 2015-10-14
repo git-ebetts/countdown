@@ -35,7 +35,7 @@ function countdown(seconds) {
     function printSeconds() {
         console.log(seconds);
         seconds --;
-        var timeoutID = setTimeout(function() {clearInterval(intervalID)}, [6000]);
+        var timeoutID = setTimeout(function() {clearInterval(intervalID);}, [6000]);
     }
 }
 countdown(5);
