@@ -28,14 +28,14 @@ function countdown(seconds) {
 }
 countdown(5);
 
-// SOLUTION LEVEL 2
+SOLUTION LEVEL 2
 
 function countdown(seconds) {
     var intervalID = setInterval(printSeconds, 1000);
     function printSeconds() {
         console.log(seconds);
         seconds --;
-        var timeoutID = setTimeout(function() {clearInterval(intervalID);}, [6000]);
+        var timeoutID = setTimeout(function() {clearInterval(intervalID);}, [(seconds + 1) * 1000]);
     }
 }
 countdown(5);
